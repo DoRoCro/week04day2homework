@@ -1,0 +1,22 @@
+<form method="POST" action="/pizzas">
+  <label for="first-name">First Name: </label>
+  <input type="text" id="first-name" name="first_name"/>  
+  <!-- match name= to database column_name for ease of access, use id=label_name so click on label activates input field to keep page accessible to screen readers --> 
+  
+  <label for="last-name">Last Name: </label>
+  <input type="text" id="last-name" name="last_name"/>  
+  
+  <label for="pizza-select">Select Pizza: </label>
+  <select  type="text" id="pizza-select" name="topping">
+    <option value="Margherita">Margherita</option>
+    <option value="Calzone">Calzone</option>
+    <option value="Pepperoni">Pepperoni</option>
+    <!-- value is returned to database, between tags is displayed in drop-down list.  Could use dynamic code to generate options list -->
+    <!-- etc -->
+  </select>  
+  
+  <label for="quantity">Quantity: </label>
+  <input type="number" id="quantity" name="quantity" min=1 step=1/>  
+  <input type="submit" value="Order Pizza(s)">
+  
+</form>

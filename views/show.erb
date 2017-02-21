@@ -1,0 +1,9 @@
+<p><h2>Pizza order <%= @pizza.id %></h2></p>
+<hr>
+<p>Ordered by:  <%= @pizza.pretty_name %></p>
+<p>Topping:     <%= @pizza.topping %></p>
+<p>Quantity:    <%= @pizza.quantity %></p>
+<p>Total Value: <%= @pizza.total %></p>
+<p></p>
+<a href="/pizzas/<%= @pizza.id %>/edit">Edit this Order</a>
+<hr>
